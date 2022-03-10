@@ -47,7 +47,7 @@ public class PriorityQueueTest {
     void arrayStoreExceptionFromToArray(){
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
         priorityQueue.add(1);
-        assertThrows(NullPointerException.class, ()->priorityQueue.toArray(new Double[]{}));
+        assertThrows(ArrayStoreException.class, ()->priorityQueue.toArray(new Double[]{}));
     }
 
     class Data{
